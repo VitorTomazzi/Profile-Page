@@ -1,53 +1,138 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
-body {
-        background-color: black; /* For browsers that do not support gradients */
-        background-image: linear-gradient(to bottom right,#1A1A1A, #B01BF1 ); /* Standard syntax (must be last) */
-        font-family: 'Montserrat', sans-serif;
-    }
-
-.container {
-    text-align: center;
-    height: 65vh;
-    margin: 10% auto;
-    color: black;
+html {
+    scroll-behavior: smooth;
 }
+
+#intro {
+    background-color: #B01BF1;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #1BF1B0, #B01BF1, #F1B01B);
+    /* Standard syntax (must be last) */
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    height: 45rem;
+    color: black;
+    padding: 100px;
+}
+
 
 .display-4 {
     font-size: 8rem;
 }
 
+/* figure out how to type VIC then backspace the C and continue with VITOR...  */
 #typewriter {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #5CF11B; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .1em; /* Adjust as needed */
-    /* font-weight: 300; */
-    animation: 
-      typing 3s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #5CF11B; }
-  }
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em;
+    /* Adjust as needed */
+    /* font-weight: 700; */
+    animation:
+        typing 3s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
 
 .button {
     background-color: #F11B5C;
-    margin: auto 40%;
     border: 1px solid black;
 }
 
-.container p {
-    color: white;
-    font-size: 
+#projects {
+    height: initial !important;
+    margin: 40px 0;
 }
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    margin: 2em 5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.project-heading {
+    text-align: center;
+    margin: 5% 10%;
+    /* border: 1px solid red; */
+}
+
+.project-heading h3 {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#section-3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #B01BF1;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #F1B01B, #B01BF1, #1BF1B0);
+    /* Standard syntax (must be last) */
+}
+
+/* footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+} */
+
+/* #follow {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 5vw;
+    height: 50px;
+    color: white;
+    transition: all .5s;
+}
+
+#follow:hover {
+    width: 33vw;
+} */
+
