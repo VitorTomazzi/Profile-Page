@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+body {
+        background-color: black; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to bottom right,#1A1A1A, #B01BF1 ); /* Standard syntax (must be last) */
+        font-family: 'Montserrat', sans-serif;
+    }
+
+.container {
+    text-align: center;
+    height: 65vh;
+    margin: 10% auto;
+    color: black;
+}
+
+.display-4 {
+    font-size: 8rem;
+}
+
+#typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #5CF11B; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    /* font-weight: 300; */
+    animation: 
+      typing 3s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #5CF11B; }
+  }
+
+.button {
+    background-color: #F11B5C;
+    margin: auto 40%;
+    border: 1px solid black;
+}
+
+.container p {
+    color: white;
+    font-size: 
+}
