@@ -7,11 +7,11 @@ html {
 #intro {
     background-color: #B01BF1;
     /* For browsers that do not support gradients */
-    background-image: linear-gradient(to bottom right, #1BF1B0, #B01BF1, #F1B01B);
+    background-image: linear-gradient(to bottom right, #B01BF1, #1BF1B0, #F1B01B);
     /* Standard syntax (must be last) */
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    height: 45rem;
+    /* height: 45rem; */
     color: black;
     padding: 100px;
 }
@@ -26,7 +26,7 @@ html {
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange;
-    /* The typwriter cursor */
+    /* The typewriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
     margin: 0 auto;
@@ -104,7 +104,7 @@ html {
     font-weight: 700;
 }
 
-#section-3 {
+#collaborate {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -114,6 +114,10 @@ html {
     /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom right, #F1B01B, #B01BF1, #1BF1B0);
     /* Standard syntax (must be last) */
+}
+
+.icon {
+    text-decoration: none;
 }
 
 /* footer {
