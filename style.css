@@ -73,8 +73,8 @@ html {
 }
 
 .button {
-    background-color: #F11B5C;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border-color: transparent;
     font-family: 'Lusitana', serif;
 }
 
@@ -145,10 +145,13 @@ html {
 .collab-container h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    font-size: 2.25rem
 }
 
 .collab-container p {
     font-family: 'Lusitana', serif;
+    font-size: 1.25rem;
+    margin-top:25px;
 }
 
 /* footer {
