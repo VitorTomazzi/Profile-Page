@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css?family=Lusitana|Raleway:400,700&display=swap');
+/* font-family: 'Raleway', sans-serif; 400, 700 bold
+font-family: 'Lusitana', serif; 400 */
 
 html {
     scroll-behavior: smooth;
@@ -9,13 +13,18 @@ html {
     /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom right, #B01BF1, #1BF1B0, #F1B01B);
     /* Standard syntax (must be last) */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     /* height: 45rem; */
     color: black;
     padding: 100px;
 }
 
+#intro>div>p {
+    font-family: 'lusitana', serif;
+    font-size: 24px;
+    color: white;
+}
 
 .display-4 {
     font-size: 8rem;
@@ -66,6 +75,7 @@ html {
 .button {
     background-color: #F11B5C;
     border: 1px solid black;
+    font-family: 'Lusitana', serif;
 }
 
 #projects {
@@ -81,15 +91,16 @@ html {
 
 .card {
     margin: 2em 5em;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .card-title {
     font-weight: 700;
+    font-family: 'Raleway', sans-serif;
 }
 
 .card-body {
     text-align: center;
+    font-family: 'Lusitana', serif;
 }
 
 .project-heading {
@@ -100,7 +111,7 @@ html {
 
 .project-heading h3 {
     font-size: 50px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
 
@@ -118,6 +129,26 @@ html {
 
 .icon {
     text-decoration: none;
+}
+
+.collab-container {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* border: 1px solid red; */
+    margin: 5vh 25vw;
+    text-align: center;
+    color: white;
+}
+
+.collab-container h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.collab-container p {
+    font-family: 'Lusitana', serif;
 }
 
 /* footer {
@@ -139,4 +170,3 @@ html {
 #follow:hover {
     width: 33vw;
 } */
-
